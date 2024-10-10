@@ -1,0 +1,10 @@
+// clone existing repo
+// create project and link to github repo
+// create branch: git checkout -b <branch-name>;
+// I want to push the code to github
+//add+commit+push: git add. && git commit -m "commit message" && git push origin <branch-name>
+// add files: git add <file-name>;
+// commit changes: git commit -m "<commit-message>";
+// push changes to remote: git push origin <branch-name>;
+// create pull request on github
+// merge pull request on github 
