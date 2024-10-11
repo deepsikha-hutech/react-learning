@@ -1,9 +1,13 @@
-import react, { component } from 'react';
+import React, { Component } from 'react'
 
-class welcome extends component {
-    render() {
-        return <h1>Class component</h1>
-    }
+export class welcome extends Component {
+  render() {
+    return (
+      <div>welcome</div>
+    )
+  }
 }
 
-export default welcome;
+export default welcome
+
+
