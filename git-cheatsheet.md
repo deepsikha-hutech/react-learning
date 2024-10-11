@@ -3,10 +3,9 @@
  create project and link to github rep
 
 
- create branch from base branch: git checkout -b <branch-name>
- switch to diff branch:   git checkout <branch-name>
+ create branch: git checkout -b <branch-name>
 
-
+<!-- -------------------------------------------- -->
  I want to push the code to github : add+commit+push: 
  git add .  
  OR  
@@ -22,7 +21,7 @@ git push
 
 push to diff branch
 git push origin <branch-name>
-
+<!-- -------------------------------------------------` -->
 
 // add files: git add <file-name>;
 // commit changes: git commit -m "<commit-message>";

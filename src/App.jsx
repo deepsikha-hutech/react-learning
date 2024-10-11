@@ -3,16 +3,25 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import HelloWorld from './components/HelloWorld'
-
+import welcome from './components/welcome'
 function App() {
   const [count, setCount] = useState(0)
 
 
 
   return (
-    <>
-     <HelloWorld/>
-    </>
+     <div>
+      <HelloWorld/>
+      
+      
+      </div>
+
+
+      
+      
+    
+      
+    
   )
 }
 
