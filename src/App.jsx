@@ -17,6 +17,8 @@ import Form from "./components/Form.jsx";
 import LifecycleA from "./components/LifecycleA.jsx";
 import FragmentDemo from "./components/FragmentDemo.jsx";
 import Table from "./components/Table.jsx";
+import ParentComp from "./components/ParentComp.jsx";
+import RefsDemo from "./components/RefsDemo.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,7 +27,9 @@ function App() {
     <div className="App">
       <h1 className="error">Error</h1>
       <h1 className={styles.success}>Success</h1>
-      <Table />
+      <RefsDemo />
+      {/*} <ParentComp />
+      {/*<Table />
       {/*<FragmentDemo />
 
       <LifecycleA />
