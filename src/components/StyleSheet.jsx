@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import "./myStyles.css";
 
-function StyleSheet() {
+function StyleSheet(props) {
+  let classname = props.primary ? "primary" : "";
   return (
-    <div>StyleSheet</div>
-  )
+    <div>
+      <h1 classname={`${classname} font-xl`}>Stylesheets</h1>
+    </div>
+  );
 }
 
-export default StyleSheet
+export default StyleSheet;
