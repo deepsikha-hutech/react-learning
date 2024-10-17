@@ -11,23 +11,42 @@ import ClassClick from "./components/ClassClick";
 import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
 import UserGreeetings from "./components/UserGreetings";
+import styles from "./components/appStyles.module.css";
+import "./components/appStyles.css";
+import Form from "./components/Form.jsx";
+import LifecycleA from "./components/LifecycleA.jsx";
+import FragmentDemo from "./components/FragmentDemo.jsx";
+import Table from "./components/Table.jsx";
+import ParentComp from "./components/ParentComp.jsx";
+import RefsDemo from "./components/RefsDemo.jsx";
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
-      <NameList />
-      <Person />
-      <StyleSheet />
+    <div className="App">
+      <h1 className="error">Error</h1>
+      <h1 className={styles.success}>Success</h1>
+      <RefsDemo />
+      {/*} <ParentComp />
+      {/*<Table />
+      {/*<FragmentDemo />
 
-      <HelloWorld />
-      <Counter />
-      <FunctionClick />
-      <WelcomeReact />
-      <ClassClick />
-      <EventBind />
-      <ParentComponent />
-      <UserGreeetings />
+      <LifecycleA />
+
+      {/*<Form />
+
+      <Inline />
+       <NameList />
+      <Person />
+      <StyleSheet primary={true} />
+      {/*<WelcomeReact />
+      <HelloWorld/>
+      <FunctionClick/>
+      <Counter/>
+      <UserGreeetings/>
+      <ClassClick/>
+      <ParentComponent/>  */}
     </div>
   );
 }
