@@ -24,10 +24,9 @@ import ClassComponentExample from "./components/ClassComponentExample.jsx";
 import IncreaseAge from "./components/IncreaseAge.jsx";
 import HooksStateFunctionalComponent from "./components/Hooks/HooksStateFunctionalComponent.jsx";
 import EmployeeFunctionComp from "./components/Hooks/EmployeeFunctionComp.jsx";
+import EmployeeRegForm from "./components/Hooks/EmployeeRegForm.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
       {/* <h1 className="error">Error</h1>
@@ -56,7 +55,8 @@ function App() {
       {/* <FunctionalCoponentExample />*/}
       {/* <IncreaseAge /> */}
       {/* <HooksStateFunctionalComponent /> */}
-      <EmployeeFunctionComp />
+      {/* <EmployeeFunctionComp /> */}
+      <EmployeeRegForm />
     </div>
   );
 }
