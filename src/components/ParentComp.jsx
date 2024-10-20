@@ -15,6 +15,7 @@ class ParentComp extends PureComponent {
   componentDidMount() {
     setInterval(() => {
       this.setState({
+        ...this.state,
         name: "User",
       });
     }, 3000);
