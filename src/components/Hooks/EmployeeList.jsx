@@ -16,9 +16,16 @@ function EmployeeList(props) {
     console.log(JSON.stringify);
   };
 
-  const handleSelectAll = (index) => {
-    // const isChecked = e.target.value;
-    // employee.map;
+  const handleCheckBoxSelectAll = (isSelected) => {
+    if (isSelected) {
+      const allEmployeeIds = props.employees.map((emp, index) => index);
+      setSelectedEmployeeIds(allEmployeeIds);
+    } else {
+      setSelectedEmployeeIds([]);
+    }
+
+    // alert("ischecked" + index);
+    // console.log([...Array(100).keys()]);
   };
 
   return (
@@ -35,6 +42,7 @@ function EmployeeList(props) {
             setSelectedEmployeeIds([]);
             // ("delete all");
           }}
+          style={{ backgroundColor: "lightgray" }}
         >
           Delete All
         </button>
@@ -43,7 +51,7 @@ function EmployeeList(props) {
       <table
         border={"1px black solid"}
         cellPadding="10px"
-        cellspacing="5px"
+        cellSpacing="5px"
         align="center"
       >
         <thead>
@@ -55,7 +63,14 @@ function EmployeeList(props) {
             padding="10px"
           >
             <th>
-              <input type="checkbox"></input>
+              <input
+                type="checkbox"
+                checked={
+                  selectedEmployeeIds.length === props.employees.length &&
+                  props.employees.length > 0
+                }
+                onChange={(e) => handleCheckBoxSelectAll(e.target.checked)}
+              ></input>
             </th>
 
             <th>SL No.</th>

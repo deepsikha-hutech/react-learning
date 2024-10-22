@@ -54,16 +54,6 @@ function EmployeeRegForm(props) {
     setEmployeeData({ name: " ", age: " " });
   };
 
-  // const handleSelectAll = (e) => {
-  //   const isChecked = e.target.checked;
-  //   setEmployee(
-  //     employee.map((index) => ({
-  //       ...employee,
-  //       isChecked,
-  //     }))
-  //   );
-  // };
-
   // const isAllSelected = index.every((employee) => employee.isChecked);
   return (
     <div>
