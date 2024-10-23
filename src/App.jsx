@@ -26,6 +26,8 @@ import HooksStateFunctionalComponent from "./components/Hooks/HooksStateFunction
 import EmployeeFunctionComp from "./components/Hooks/EmployeeFunctionComp.jsx";
 import EmployeeRegForm from "./components/Hooks/EmployeeRegForm.jsx";
 import TableCheckbox from "./components/Hooks/TableCheckbox.jsx";
+import Login from "./components/Stocks/public/Login.jsx";
+import Signup from "./components/Stocks/public/Signup.jsx";
 
 function App() {
   return (
@@ -57,8 +59,10 @@ function App() {
       {/* <IncreaseAge /> */}
       {/* <HooksStateFunctionalComponent /> */}
       {/* <EmployeeFunctionComp /> */}
-      <EmployeeRegForm />
+      {/* <EmployeeRegForm /> */}
       {/* <TableCheckbox /> */}
+      {/* <Login /> */}
+      <Signup />
     </div>
   );
 }

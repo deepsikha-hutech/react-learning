@@ -33,7 +33,7 @@ function EmployeeList(props) {
       <h2 style={{ color: "purple", padding: "10px", margin: "10px" }}>
         Employee Data list
       </h2>
-      {JSON.stringify({ selectedEmployeeIds })}
+      {/* {JSON.stringify({ selectedEmployeeIds })} */}
       {/* {JSON.stringify({ ssss: props.employees })} */}
       <h3 align="right">
         <button
@@ -66,8 +66,8 @@ function EmployeeList(props) {
               <input
                 type="checkbox"
                 checked={
-                  selectedEmployeeIds.length === props.employees.length &&
-                  props.employees.length > 0
+                  selectedEmployeeIds?.length === props?.employees?.length &&
+                  props?.employees?.length > 0
                 }
                 onChange={(e) => handleCheckBoxSelectAll(e.target.checked)}
               ></input>
@@ -83,7 +83,7 @@ function EmployeeList(props) {
           </tr>
         </thead>
         <tbody>
-          {props.employees.map((employee, index) => (
+          {props?.employees?.map((employee, index) => (
             <tr key={index}>
               <td>
                 <input
