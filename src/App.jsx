@@ -61,8 +61,8 @@ function App() {
       {/* <EmployeeFunctionComp /> */}
       {/* <EmployeeRegForm /> */}
       {/* <TableCheckbox /> */}
-      {/* <Login /> */}
-      <Signup />
+      {/* <Login />
+      <Signup /> */}
     </div>
   );
 }
