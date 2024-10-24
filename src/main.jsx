@@ -2,10 +2,12 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { Router, RouterProvider, createBrowserRouter } from "react-router-dom";
 import EmployeeRegForm from "./components/Hooks/EmployeeRegForm.jsx";
-import EmployeeFunctionComp from "./components/Hooks/EmployeeFunctionComp.jsx";
 import Login from "./components/Stocks/public/Login.jsx";
 import Signup from "./components/Stocks/public/Signup.jsx";
-import App from "./App.jsx";
+
+import ForgotPassword from "./components/Stocks/public/ForgotPassword.jsx";
+import ResetPassword from "./components/Stocks/public/ResetPassword.jsx";
+
 import "./index.css";
 import Error from "./components/Error.jsx";
 
@@ -21,10 +23,21 @@ const router = createBrowserRouter([
     errorElement: <Error />,
   },
   {
+    path: "/forgotPassword",
+    element: <ForgotPassword />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/resetPassword",
+    element: <ResetPassword />,
+    errorElement: <Error />,
+  },
+  {
     path: "/signup",
     element: <Signup />,
     errorElement: <Error />,
   },
+
   {
     path: "/emp",
     element: <EmployeeRegForm />,

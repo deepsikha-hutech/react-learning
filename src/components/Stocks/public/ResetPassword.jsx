@@ -1,17 +1,20 @@
 import React, { useState } from "react";
-import "./Signup.css";
+import "./resetPassword.css";
+
 import logo from "../images/logo.svg";
 
-function Signup() {
+function ResetPassword() {
   const [loginData, setLoginData] = useState({
-    name: "",
     email: "",
     password: "",
   });
   const [person, setPerson] = useState([]);
 
   const handleSubmit = (e) => {
-    console.log("Login data:", loginData);
+    console.log(
+      "a link to reset your password has been sent to you on:",
+      email
+    );
   };
 
   return (
@@ -32,19 +35,12 @@ function Signup() {
         </div>
 
         <div className="right-bar">
-          <h2>Signup</h2>
+          <h2> Reset Password</h2>
+          <p>
+            Enter your registration email to receive a link to reset your
+            password
+          </p>
           <form onSubmit={handleSubmit}>
-            <div className="flex-start-col input-container-3">
-              <input
-                placeholder="Name"
-                type="name"
-                value={loginData.name}
-                onChange={(e) =>
-                  setLoginData({ ...loginData, name: e.target.value })
-                }
-              />
-            </div>
-
             <div className="flex-start-col input-container-1">
               <input
                 placeholder="Email"
@@ -55,31 +51,14 @@ function Signup() {
                 }
               />
             </div>
-
-            <div className="flex-start-col input-container-2">
-              <input
-                placeholder="Password"
-                type="password"
-                value={loginData.password}
-                onChange={(e) =>
-                  setLoginData({ ...loginData, password: e.target.value })
-                }
-              />
-            </div>
-
-            <div className="login">
-              Already have an account? <a href="/login">Login</a>
-            </div>
-
             <button type="submit" className="submit-button">
-              Submit
+              Continue
             </button>
           </form>
         </div>
       </div>
     </div>
-    // </div>
   );
 }
 
-export default Signup;
+export default ResetPassword;
