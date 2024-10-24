@@ -68,7 +68,7 @@ function EmployeeFunctionComp() {
         <h2 style={{ color: "blue", padding: "10px", margin: "10px" }}>
           Employee Data list
         </h2>
-
+        <br></br>
         <table border={"1px black solid"} cellpadding="10px" cellspacing="5px">
           <thead>
             <tr
