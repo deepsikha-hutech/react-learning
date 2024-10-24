@@ -19,15 +19,19 @@ import FragmentDemo from "./components/FragmentDemo.jsx";
 import Table from "./components/Table.jsx";
 import ParentComp from "./components/ParentComp.jsx";
 import RefsDemo from "./components/RefsDemo.jsx";
+import FunctionalCoponentExample from "./components/FunctionalCoponentExample.jsx";
+import ClassComponentExample from "./components/ClassComponentExample.jsx";
+import IncreaseAge from "./components/IncreaseAge.jsx";
+import HooksStateFunctionalComponent from "./components/Hooks/HooksStateFunctionalComponent.jsx";
+import EmployeeFunctionComp from "./components/Hooks/EmployeeFunctionComp.jsx";
+import EmployeeRegForm from "./components/Hooks/EmployeeRegForm.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
-      <h1 className="error">Error</h1>
-      <h1 className={styles.success}>Success</h1>
-      <RefsDemo />
+      {/* <h1 className="error">Error</h1>
+      <h1 className={styles.success}>Success</h1> */}
+      {/* <RefsDemo /> */}
       {/*} <ParentComp />
       {/*<Table />
       {/*<FragmentDemo />
@@ -47,6 +51,12 @@ function App() {
       <UserGreeetings/>
       <ClassClick/>
       <ParentComponent/>  */}
+      {/* <ClassComponentExample /> */}
+      {/* <FunctionalCoponentExample />*/}
+      {/* <IncreaseAge /> */}
+      {/* <HooksStateFunctionalComponent /> */}
+      {/* <EmployeeFunctionComp /> */}
+      <EmployeeRegForm />
     </div>
   );
 }
