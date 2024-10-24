@@ -4,13 +4,12 @@ import logo from "../images/logo.svg";
 
 function Login() {
   const [loginData, setLoginData] = useState({ email: "", password: "" });
-  const [person, setPerson] = useState([]);
 
-  const handleSubmit = (e) => {
-    console.log("Login data:", loginData);
-  };
-
-  function login(formValues) {
+  function login(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const formProps = Object.fromEntries(formData);
+    console.log(formProps);
     alert("login success");
   }
 
@@ -36,7 +35,9 @@ function Login() {
           <form onSubmit={login}>
             <div className="login-flex-start-col input-container-1">
               <input
+                name="email"
                 required
+                autoComplete={"true"}
                 placeholder="Email"
                 type="email"
                 value={loginData.email}
@@ -48,7 +49,9 @@ function Login() {
 
             <div className="login-flex-start-col input-container-2">
               <input
+                name="password"
                 required
+                autoComplete={"true"}
                 placeholder="Password"
                 type="password"
                 value={loginData.password}
