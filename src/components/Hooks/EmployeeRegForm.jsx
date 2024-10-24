@@ -11,10 +11,15 @@ function EmployeeRegForm(props) {
   const [currEditIndex, setCurrEditIndex] = useState(-1);
 
   const deleteBulkEmployees = (selectedIndex) => {
-    const finalSelectedEmployeesList = employees.filter((emp, i) => {
-      return !selectedIndex.includes(i);
-    });
-    setEmployees(finalSelectedEmployeesList);
+    if (selectedIndex.length == 0) {
+      alert("no employees selected");
+    } else {
+      const finalSelectedEmployeesList = employees.filter((emp, i) => {
+        return !selectedIndex.includes(i);
+      });
+
+      setEmployees(finalSelectedEmployeesList);
+    }
   };
   const getEmployeeData = () => {
     if (currEditIndex == -1) {
